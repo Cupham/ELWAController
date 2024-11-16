@@ -1,0 +1,1157 @@
+[
+    {
+        "code": "000133",
+        "company": "株式会社afterFIT",
+        "companyEn": "afterFIT Co., Ltd."
+    },
+    {
+        "code": "00002F",
+        "company": "アイホン株式会社",
+        "companyEn": "AIPHONE CO., LTD."
+    },
+    {
+        "code": "00011A",
+        "company": "株式会社ACCESS",
+        "companyEn": "ACCESS CO.,LTD."
+    },
+    {
+        "code": "00002C",
+        "company": "株式会社AFT",
+        "companyEn": "AFT CO.,LTD"
+    },
+    {
+        "code": "000068",
+        "company": "株式会社アイシン",
+        "companyEn": "AISIN CORPORATION"
+    },
+    {
+        "code": "000079",
+        "company": "アンリツエンジニアリング株式会社",
+        "companyEn": "Anritsu Engineering Co.,Ltd"
+    },
+    {
+        "code": "00007F",
+        "company": "アンリツカスタマーサポート株式会社",
+        "companyEn": "ANRITSU CUSTOMER SUPPORT CO., LTD."
+    },
+    {
+        "code": "000110",
+        "company": "株式会社あすかソリューション",
+        "companyEn": "ASUKA SOLUTION COMPANY LIMITED"
+    },
+    {
+        "code": "000096",
+        "company": "アズビル株式会社",
+        "companyEn": "Azbil Corporation"
+    },
+    {
+        "code": "0000FD",
+        "company": "株式会社ベルニクス",
+        "companyEn": "Bellnix Co.,LTD"
+    },
+    {
+        "code": "00006F",
+        "company": "株式会社バッファロー",
+        "companyEn": "BUFFALO INC."
+    },
+    {
+        "code": "0000B6",
+        "company": "文化シヤッター株式会社",
+        "companyEn": "Bunka Shutter Co., Ltd"
+    },
+    {
+        "code": "000017",
+        "company": "日本キヤリア株式会社",
+        "companyEn": "Carrier Japan Corporation"
+    },
+    {
+        "code": "0000D2",
+        "company": "長府工産株式会社",
+        "companyEn": "CHOFUKOSAN.Co.Ltd"
+    },
+    {
+        "code": "000088",
+        "company": "株式会社長府製作所",
+        "companyEn": "CHOFU SEISAKUSHO CO.,LTD."
+    },
+    {
+        "code": "0000D5",
+        "company": "長州産業株式会社",
+        "companyEn": "Choshu Industry Co., Ltd."
+    },
+    {
+        "code": "0000A3",
+        "company": "中部電力パワーグリッド株式会社",
+        "companyEn": "Chubu Electric Power Grid Co.,Inc."
+    },
+    {
+        "code": "000136",
+        "company": "株式会社中央物産",
+        "companyEn": "Chuo Bussan Co.,Ltd."
+    },
+    {
+        "code": "0000FB",
+        "company": "志幸技研工業株式会社",
+        "companyEn": "CICO CORPORATION"
+    },
+    {
+        "code": "0000F8",
+        "company": "株式会社シムックスイニシアティブ",
+        "companyEn": "CIMX INITIATIVE INC."
+    },
+    {
+        "code": "000123",
+        "company": "株式会社コンテック",
+        "companyEn": "Contec Co., Ltd."
+    },
+    {
+        "code": "000130",
+        "company": "株式会社クールデザイン",
+        "companyEn": "COOLDESIGN Corporation"
+    },
+    {
+        "code": "000067",
+        "company": "株式会社コロナ",
+        "companyEn": "CORONA CORPORATION"
+    },
+    {
+        "code": "00013B",
+        "company": "株式会社Crossdoor",
+        "companyEn": "Crossdoor Inc."
+    },
+    {
+        "code": "00009C",
+        "company": "ダイヤモンド電機株式会社",
+        "companyEn": "Diamond Electric Mfg.Co.,Ltd."
+    },
+    {
+        "code": "000080",
+        "company": "ダイヤゼブラ電機株式会社",
+        "companyEn": "DIAMOND&ZEBRA ELECTRIC MFG.CO.,LTD."
+    },
+    {
+        "code": "000119",
+        "company": "株式会社ダイヘン",
+        "companyEn": "DAIHEN Corporation"
+    },
+    {
+        "code": "000008",
+        "company": "ダイキン工業株式会社",
+        "companyEn": "DAIKIN INDUSTRIES,LTD."
+    },
+    {
+        "code": "000015",
+        "company": "株式会社ダイキンシステムソリューションズ研究所",
+        "companyEn": "Daikin Systems&Solutions Laboratory Ltd."
+    },
+    {
+        "code": "00004F",
+        "company": "大和ハウス工業株式会社",
+        "companyEn": "Daiwa House Industry co.,Ltd"
+    },
+    {
+        "code": "000103",
+        "company": "データテクノロジー株式会社",
+        "companyEn": "Data Technology Inc."
+    },
+    {
+        "code": "0000E3",
+        "company": "株式会社ディーディーエル",
+        "companyEn": "DDL Co.,Ltd"
+    },
+    {
+        "code": "0000AD",
+        "company": "デルタ電子株式会社",
+        "companyEn": "Delta Electronics (Japan), Inc."
+    },
+    {
+        "code": "0000BE",
+        "company": "株式会社デンケン",
+        "companyEn": "DENKEN Co.,Ltd."
+    },
+    {
+        "code": "0000F4",
+        "company": "株式会社デンソーエアクール",
+        "companyEn": "DENSO AIRCOOL CORPORATION"
+    },
+    {
+        "code": "00003C",
+        "company": "株式会社デンソー",
+        "companyEn": "DENSO Corporation"
+    },
+    {
+        "code": "000109",
+        "company": "株式会社デンソー",
+        "companyEn": "DENSO Co.,LTD."
+    },
+    {
+        "code": "00012B",
+        "company": "株式会社デンソーウェーブ",
+        "companyEn": "DENSO WAVE INCORPORATED"
+    },
+    {
+        "code": "000113",
+        "company": "荏原実業株式会社",
+        "companyEn": "EBARA JITSUGYO CO., LTD"
+    },
+    {
+        "code": "000057",
+        "company": "エリーパワー株式会社",
+        "companyEn": "ELIIYPower Co.,ltd"
+    },
+    {
+        "code": "00012E",
+        "company": "エネクラウド株式会社",
+        "companyEn": "Eneres Co.,Ltd."
+    },
+    {
+        "code": "000041",
+        "company": "株式会社エネゲート",
+        "companyEn": "ENEGATE CO.,LTD."
+    },
+    {
+        "code": "00010A",
+        "company": "株式会社エネルギーギャップ",
+        "companyEn": "ENERGY GAP CORPORATION"
+    },
+    {
+        "code": "0000F3",
+        "company": "株式会社エナジーゲートウェイ",
+        "companyEn": "Energy Gateway, Inc"
+    },
+    {
+        "code": "00013F",
+        "company": "エナジープールジャパン株式会社",
+        "companyEn": "Energy Pool Japan K.K."
+    },
+    {
+        "code": "0000F2",
+        "company": "エナジー・ソリューションズ株式会社",
+        "companyEn": "Energy Solutions Inc."
+    },
+    {
+        "code": "000072",
+        "company": "株式会社エナリス",
+        "companyEn": "Eneres Co.,Ltd."
+    },
+    {
+        "code": "0000DD",
+        "company": "株式会社エナ・ストーン",
+        "companyEn": "EneStone Corporation"
+    },
+    {
+        "code": "000132",
+        "company": "EX4Energy株式会社",
+        "companyEn": "EX4Energy, Inc."
+    },
+    {
+        "code": "000055",
+        "company": "株式会社ファミリーネット・ジャパン",
+        "companyEn": "FAMILYNET JAPAN CORPORATION"
+    },
+    {
+        "code": "0000F6",
+        "company": "株式会社フィールドロジック",
+        "companyEn": "Field Logic Inc."
+    },
+    {
+        "code": "00012F",
+        "company": "台湾プラスチックジャパンニューエナジー株式会社",
+        "companyEn": "FORMOSA BIO AND ENERGY CORP JAPAN"
+    },
+    {
+        "code": "0000CB",
+        "company": "富士電機株式会社",
+        "companyEn": "Fuji Electric Co.,Ltd"
+    },
+    {
+        "code": "0000FC",
+        "company": "富士工業株式会社",
+        "companyEn": "FUJI INDUSTRIAL CO.,Ltd."
+    },
+    {
+        "code": "000051",
+        "company": "富士アイティ株式会社",
+        "companyEn": "Fuji IT Co.,Ltd."
+    },
+    {
+        "code": "00008A",
+        "company": "株式会社富士通ゼネラル",
+        "companyEn": "FUJITSU GENERAL LIMITED"
+    },
+    {
+        "code": "00004E",
+        "company": "富士通株式会社",
+        "companyEn": "FUJITSU LIMITED"
+    },
+    {
+        "code": "000090",
+        "company": "富士通コンポーネント株式会社",
+        "companyEn": "Fujitsu Component Limited"
+    },
+    {
+        "code": "0000DE",
+        "company": "富士フイルムビジネスイノベーションジャパン株式会社",
+        "companyEn": "FUJIFILM Business Innovation Japan Corp"
+    },
+    {
+        "code": "000097",
+        "company": "株式会社未来技術研究所",
+        "companyEn": "Future Technology Laboratories, Inc."
+    },
+    {
+        "code": "00009B",
+        "company": "株式会社ガスター",
+        "companyEn": "GASTAR Co.,Ltd"
+    },
+    {
+        "code": "00008F",
+        "company": "株式会社グラモ",
+        "companyEn": "Glamo Inc."
+    },
+    {
+        "code": "000129",
+        "company": "GoodWe　Japan株式会社",
+        "companyEn": "GoodWe Japan K.K"
+    },
+    {
+        "code": "000134",
+        "company": "GoodWe Technologies Co.,Ltd.",
+        "companyEn": "GoodWe Technologies Co.,Ltd."
+    },
+    {
+        "code": "00009F",
+        "company": "株式会社GSユアサ",
+        "companyEn": "GS Yuasa International Ltd"
+    },
+    {
+        "code": "00013A",
+        "company": "株式会社ＧＵＧＥＮ",
+        "companyEn": "GUGEN,Inc."
+    },
+    {
+        "code": "000122",
+        "company": "ハンファＱセルズジャパン株式会社",
+        "companyEn": "Hanwha Q CELLS Japan CO.,LTD."
+    },
+    {
+        "code": "000001",
+        "company": "株式会社日立製作所",
+        "companyEn": "Hitachi, Ltd."
+    },
+    {
+        "code": "000022",
+        "company": "日立グローバルライフソリューションズ株式会社",
+        "companyEn": "Hitachi Global Life Solutions, Inc."
+    },
+    {
+        "code": "000040",
+        "company": "株式会社日立ハイテクソリューションズ",
+        "companyEn": "Hitachi High-Tech Solutions Corporation"
+    },
+    {
+        "code": "000044",
+        "company": "株式会社日立産機システム",
+        "companyEn": "Hitachi Industrial Equipment Systems Co.,Ltd."
+    },
+    {
+        "code": "0000CC",
+        "company": "日立ジョンソンコントロールズ空調株式会社",
+        "companyEn": "Hitachi-Johnson Controls Air Conditioning,Inc."
+    },
+    {
+        "code": "0000E5",
+        "company": "株式会社日立パワーソリューションズ",
+        "companyEn": "Hitachi Power Solutions Co.,Ltd."
+    },
+    {
+        "code": "0000E6",
+        "company": "一般財団法人北海道電気保安協会",
+        "companyEn": "Hokkaido Electrical Safety Services Foundation"
+    },
+    {
+        "code": "0000B8",
+        "company": "北海道電力株式会社",
+        "companyEn": "Hokkaido Electric Power Co.,Inc."
+    },
+    {
+        "code": "0000BB",
+        "company": "北陸電力送配電株式会社",
+        "companyEn": "Hokuriku Electric Power Transmission & Distribution Company"
+    },
+    {
+        "code": "0000A1",
+        "company": "株式会社本田技術研究所",
+        "companyEn": "Honda R&D Co., Ltd."
+    },
+    {
+        "code": "000115",
+        "company": "華為技術日本株式会社",
+        "companyEn": "HUAWEI TECHNOLOGIES JAPAN K.K."
+    },
+    {
+        "code": "0000B0",
+        "company": "株式会社イデア",
+        "companyEn": "idea co.,ltd."
+    },
+    {
+        "code": "0000AC",
+        "company": "IDEC株式会社",
+        "companyEn": "IDEC COROPRATION"
+    },
+    {
+        "code": "00013E",
+        "company": "株式会社アイ・グリッド・ソリューションズ",
+        "companyEn": "i GRID SOLUTIONS Inc."
+    },
+    {
+        "code": "00004D",
+        "company": "因幡電機産業株式会社",
+        "companyEn": "INABA DENKI SANGYO CO.,LTD."
+    },
+    {
+        "code": "000056",
+        "company": "株式会社iND",
+        "companyEn": "iND Co.,Ltd"
+    },
+    {
+        "code": "0000ED",
+        "company": "アンフィニ株式会社",
+        "companyEn": "INFINI Co. LTD"
+    },
+    {
+        "code": "000124",
+        "company": "株式会社インテック",
+        "companyEn": "INTEC Inc."
+    },
+    {
+        "code": "0000B1",
+        "company": "株式会社インターネットイニシアティブ",
+        "companyEn": "Internet Initiative Japan Inc."
+    },
+    {
+        "code": "000087",
+        "company": "株式会社アイ･オー･データ機器",
+        "companyEn": "I-O DATA DEVICE,INC."
+    },
+    {
+        "code": "00006B",
+        "company": "株式会社アイ・エス・ビー",
+        "companyEn": "ISB Corporation"
+    },
+    {
+        "code": "00010F",
+        "company": "岩谷産業株式会社",
+        "companyEn": "Iwatani Corporation"
+    },
+    {
+        "code": "000081",
+        "company": "岩崎通信機株式会社",
+        "companyEn": "IWATSU ELECTRIC CO., LTD."
+    },
+    {
+        "code": "0000C3",
+        "company": "日本電気計器検定所",
+        "companyEn": "Japan Electric Meters Inspection Corporation"
+    },
+    {
+        "code": "0000F7",
+        "company": "株式会社ジェイシティ",
+        "companyEn": "JCity,Inc."
+    },
+    {
+        "code": "0000CA",
+        "company": "株式会社ジェイエスピー",
+        "companyEn": "JSP CO.,LTD."
+    },
+    {
+        "code": "0000D7",
+        "company": "加賀電子株式会社",
+        "companyEn": "Kaga Electronics co.,ltd."
+    },
+    {
+        "code": "000077",
+        "company": "学校法人幾徳学園　神奈川工科大学",
+        "companyEn": "Kanagawa Institute of Technology"
+    },
+    {
+        "code": "000063",
+        "company": "河村電器産業株式会社",
+        "companyEn": "Kawamura Electric Inc."
+    },
+    {
+        "code": "0000F0",
+        "company": "株式会社カネカ",
+        "companyEn": "KANEKA CORPORATION"
+    },
+    {
+        "code": "00010B",
+        "company": "株式会社北日本電線",
+        "companyEn": "KITANIHON ELECTRIC CABLE CO.,LTD."
+    },
+    {
+        "code": "0000E8",
+        "company": "コイズミ照明株式会社",
+        "companyEn": "KOIZUMI LIGHTING TECHNOLOGY CORP."
+    },
+    {
+        "code": "00003B",
+        "company": "京セラ株式会社",
+        "companyEn": "KYOCERA Corporation"
+    },
+    {
+        "code": "00008C",
+        "company": "九電テクノシステムズ株式会社",
+        "companyEn": "Kyuden Technosystems Corporation"
+    },
+    {
+        "code": "0000BF",
+        "company": "九州電力送配電株式会社",
+        "companyEn": "KYUSHU ELECTRIC POWER TRANSMISSION AND DISTRIBUTION CO.,INC."
+    },
+    {
+        "code": "0000F1",
+        "company": "株式会社ラプラス・システム",
+        "companyEn": "Laplace Systems Co., Ltd."
+    },
+    {
+        "code": "000135",
+        "company": "株式会社リンクジャパン",
+        "companyEn": "LinkJapan Inc."
+    },
+    {
+        "code": "000125",
+        "company": "株式会社LiveSmart",
+        "companyEn": "LiveSmart KK"
+    },
+    {
+        "code": "000025",
+        "company": "株式会社LIXIL",
+        "companyEn": "LIXIL Corporation"
+    },
+    {
+        "code": "0000E0",
+        "company": "株式会社Looop",
+        "companyEn": "Looop Inc"
+    },
+    {
+        "code": "00010C",
+        "company": "マックス株式会社",
+        "companyEn": "MAX CO., LTD."
+    },
+    {
+        "code": "000078",
+        "company": "マクセル株式会社",
+        "companyEn": "Maxell, Ltd."
+    },
+    {
+        "code": "000058",
+        "company": "株式会社メディオテック",
+        "companyEn": "Mediotec Corporation"
+    },
+    {
+        "code": "000120",
+        "company": "明星電気株式会社",
+        "companyEn": "Meisei electric co.,ltd."
+    },
+    {
+        "code": "000083",
+        "company": "株式会社メルコテクノ横浜",
+        "companyEn": "Melco Techno Yokohama Corporation"
+    },
+    {
+        "code": "000006",
+        "company": "三菱電機株式会社",
+        "companyEn": "Mitsubishi Electric Corp."
+    },
+    {
+        "code": "000034",
+        "company": "三菱電機エンジニアリング株式会社",
+        "companyEn": "MITSUBISHI ELECTRIC ENGINEERING COMPANY LIMITED"
+    },
+    {
+        "code": "000105",
+        "company": "三菱電機照明株式会社",
+        "companyEn": "Mitsubishi Electric Lighting Corporation"
+    },
+    {
+        "code": "00012A",
+        "company": "株式会社モノクローム",
+        "companyEn": "Monochrome Inc."
+    },
+    {
+        "code": "00011D",
+        "company": "mui Lab株式会社",
+        "companyEn": "mui Lab, Inc."
+    },
+    {
+        "code": "0000D4",
+        "company": "株式会社村田製作所",
+        "companyEn": "Murata Manufacturing Co.,Ltd."
+    },
+    {
+        "code": "0000B0",
+        "company": "株式会社イデア",
+        "companyEn": "NALTEC, Inc."
+    },
+    {
+        "code": "000106",
+        "company": "Nature株式会社",
+        "companyEn": "Nature Inc."
+    },
+    {
+        "code": "000009",
+        "company": "日本電気株式会社",
+        "companyEn": "NEC Corp."
+    },
+    {
+        "code": "000118",
+        "company": "ＮＥＣマグナスコミュニケーションズ株式会社",
+        "companyEn": "NEC Magnus Communications, Ltd"
+    },
+    {
+        "code": "000073",
+        "company": "NECプラットフォームズ株式会社",
+        "companyEn": "NEC Platforms, Ltd."
+    },
+    {
+        "code": "000091",
+        "company": "NECプラットフォームズ株式会社",
+        "companyEn": "NEC Platforms, Ltd."
+    },
+    {
+        "code": "0000E2",
+        "company": "NextDrive株式会社",
+        "companyEn": "NextDrive Inc."
+    },
+    {
+        "code": "000104",
+        "company": "ネクストエナジー・アンド・リソース株式会社",
+        "companyEn": "Next Energy & Resources Co., Ltd."
+    },
+    {
+        "code": "0000B2",
+        "company": "株式会社NFブロッサムテクノロジーズ",
+        "companyEn": "NF Blossom Technologies, Inc."
+    },
+    {
+        "code": "0000A5",
+        "company": "株式会社ニチベイ",
+        "companyEn": "Nichibei Co., Ltd."
+    },
+    {
+        "code": "00006C",
+        "company": "ニチコン株式会社",
+        "companyEn": "NICHICON CORPORATION"
+    },
+    {
+        "code": "0000EB",
+        "company": "ニチコン亀岡株式会社",
+        "companyEn": "NICHICON (KAMEOKA) CORPORATION"
+    },
+    {
+        "code": "000102",
+        "company": "ニチコン草津株式会社",
+        "companyEn": "NICHICON (KUSATSU) CORPORATION"
+    },
+    {
+        "code": "000112",
+        "company": "日栄インテック株式会社",
+        "companyEn": "NICHIEI INTEC CO., LTD"
+    },
+    {
+        "code": "000071",
+        "company": "株式会社日本産業",
+        "companyEn": "NIHON SANGYO CO.,LTD."
+    },
+    {
+        "code": "0000DC",
+        "company": "日本テクノ株式会社",
+        "companyEn": "NIHON TECHNO CO.,LTD."
+    },
+    {
+        "code": "00013D",
+        "company": "日本瓦斯株式会社",
+        "companyEn": "NIPPON GAS CO.,LTD."
+    },
+    {
+        "code": "00008D",
+        "company": "日本電信電話株式会社",
+        "companyEn": "NIPPON TELEGRAPH AND TELEPHONE CORPORATION"
+    },
+    {
+        "code": "000047",
+        "company": "東日本電信電話株式会社",
+        "companyEn": "NIPPON TELEGRAPH AND TELEPHONE EAST CORPORATION"
+    },
+    {
+        "code": "000086",
+        "company": "西日本電信電話株式会社",
+        "companyEn": "NIPPON TELEGRAPH AND TELEPHONE WEST CORPORATION"
+    },
+    {
+        "code": "000036",
+        "company": "株式会社日新システムズ",
+        "companyEn": "NISSIN SYSTEMS CO., LTD."
+    },
+    {
+        "code": "0000B7",
+        "company": "日東工業株式会社",
+        "companyEn": "Nitto Kogyo Corporation"
+    },
+    {
+        "code": "000054",
+        "company": "株式会社ノーリツ",
+        "companyEn": "NORITZ CORP."
+    },
+    {
+        "code": "00007C",
+        "company": "ＮＳＷ株式会社",
+        "companyEn": "NSW Inc."
+    },
+    {
+        "code": "0000A0",
+        "company": "エヌ・ティ・ティ・アドバンステクノロジ株式会社",
+        "companyEn": "NTT Advanced Technology Corporation"
+    },
+    {
+        "code": "000023",
+        "company": "エヌ・ティ・ティ・コムウェア株式会社",
+        "companyEn": "NTT COMWARE CORPORATION"
+    },
+    {
+        "code": "000061",
+        "company": "エヌ・ティ・ティ・データ先端技術株式会社",
+        "companyEn": "NTT DATA INTELLILINK CORPORATION"
+    },
+    {
+        "code": "0000E9",
+        "company": "株式会社NTTスマイルエナジー",
+        "companyEn": "NTT Smile Energy Inc."
+    },
+    {
+        "code": "0000F5",
+        "company": "オーデリック株式会社",
+        "companyEn": "ODELIC CO., LTD."
+    },
+    {
+        "code": "000012",
+        "company": "大井電気株式会社",
+        "companyEn": "Oi Electric Co., Ltd"
+    },
+    {
+        "code": "00006A",
+        "company": "岡谷鋼機株式会社",
+        "companyEn": "OKAYA & CO., LTD."
+    },
+    {
+        "code": "000114",
+        "company": "岡谷機電株式会社",
+        "companyEn": "OkayaKiden Co.,Ltd."
+    },
+    {
+        "code": "000137",
+        "company": "岡谷機電株式会社",
+        "companyEn": "OkayaKiden Co.,Ltd."
+    },
+    {
+        "code": "000048",
+        "company": "沖電気工業株式会社",
+        "companyEn": "Oki Electric Industry Co., Ltd."
+    },
+    {
+        "code": "000064",
+        "company": "オムロン ソーシアルソリューションズ株式会社",
+        "companyEn": "OMRON SOCIAL SOLUTIONS CO.,LTD."
+    },
+    {
+        "code": "00012C",
+        "company": "オーナンバ株式会社",
+        "companyEn": "Onamba Co., Ltd."
+    },
+    {
+        "code": "0000D8",
+        "company": "大崎データテック株式会社",
+        "companyEn": "OSAKI DATATECH CO.,LTD."
+    },
+    {
+        "code": "000052",
+        "company": "大崎電気工業株式会社",
+        "companyEn": "OSAKI ELECTRIC CO.,LTD."
+    },
+    {
+        "code": "000127",
+        "company": "株式会社パロマ",
+        "companyEn": "Paloma Co.,Ltd."
+    },
+    {
+        "code": "00000B",
+        "company": "パナソニック ホールディングス株式会社",
+        "companyEn": "Panasonic Holdings Corporation"
+    },
+    {
+        "code": "0000DA",
+        "company": "パナソニック産機システムズ株式会社",
+        "companyEn": "Panasonic Commercial Equipment Systems Co.,Ltd."
+    },
+    {
+        "code": "0000FE",
+        "company": "パナソニック エコシステムズ株式会社",
+        "companyEn": "Panasonic Ecology Systems Co.,Ltd."
+    },
+    {
+        "code": "0000FA",
+        "company": "ぷらっとホーム株式会社",
+        "companyEn": "Plat'Home Co., Ltd."
+    },
+    {
+        "code": "000082",
+        "company": "パーパス株式会社",
+        "companyEn": "PURPOSE CO.,LTD."
+    },
+    {
+        "code": "000139",
+        "company": "ラトックシステム株式会社",
+        "companyEn": "RATOC Systems, Inc."
+    },
+    {
+        "code": "000059",
+        "company": "リンナイ株式会社",
+        "companyEn": "Rinnai Corporation"
+    },
+    {
+        "code": "000128",
+        "company": "埼広エンジニヤリング株式会社",
+        "companyEn": "SAIKOH ENGINEERING Co.,Ltd."
+    },
+    {
+        "code": "00011E",
+        "company": "株式会社サカイガワ",
+        "companyEn": "SAKAIGAWA CO., LTD"
+    },
+    {
+        "code": "00011C",
+        "company": "サンデン・リテールシステム株式会社",
+        "companyEn": "SANDEN RETAIL SYSTEMS CORPORATION"
+    },
+    {
+        "code": "00010E",
+        "company": "株式会社サニックス",
+        "companyEn": "SANIX INCORPORATED"
+    },
+    {
+        "code": "0000BA",
+        "company": "三協立山株式会社",
+        "companyEn": "SankyoTateyama, Inc."
+    },
+    {
+        "code": "0000C5",
+        "company": "三和シヤッター工業株式会社",
+        "companyEn": "SANWA SHUTTER CORPORATION"
+    },
+    {
+        "code": "000093",
+        "company": "佐鳥電機株式会社",
+        "companyEn": "SATORI ELECTRIC CO.,LTD."
+    },
+    {
+        "code": "000107",
+        "company": "株式会社正興電機製作所",
+        "companyEn": "SEIKO ELECTRIC CO.,LTD."
+    },
+    {
+        "code": "00003A",
+        "company": "積水ハウス株式会社",
+        "companyEn": "SEKISUI HOUSE, LTD."
+    },
+    {
+        "code": "000005",
+        "company": "シャープ株式会社",
+        "companyEn": "Sharp Corp"
+    },
+    {
+        "code": "000131",
+        "company": "Shenzhen Eternalplanet Energy Pingshan Ltd.",
+        "companyEn": "Shenzhen Eternalplanet Energy Pingshan Ltd."
+    },
+    {
+        "code": "0000AE",
+        "company": "四国電力株式会社",
+        "companyEn": "SHIKOKU ELECTRIC POWER CO.,INC."
+    },
+    {
+        "code": "00002E",
+        "company": "四国計測工業株式会社",
+        "companyEn": "SHIKOKU INSTRUMENTATION CO.,LTD"
+    },
+    {
+        "code": "0000CE",
+        "company": "新電元工業株式会社",
+        "companyEn": "SHINDENGEN ELECTRIC MANUFACTURING CO.LTD."
+    },
+    {
+        "code": "00010D",
+        "company": "自然電力株式会社",
+        "companyEn": "Shizen Energy Inc."
+    },
+    {
+        "code": "0000A8",
+        "company": "株式会社スマートパワーシステム",
+        "companyEn": "Smart Power System. Co,. Ltd."
+    },
+    {
+        "code": "0000DF",
+        "company": "SMAジャパン株式会社",
+        "companyEn": "SMA Japan K.K."
+    },
+    {
+        "code": "000100",
+        "company": "スマートソーラー株式会社",
+        "companyEn": "Smart Solar Corporation"
+    },
+    {
+        "code": "00007E",
+        "company": "SMK株式会社",
+        "companyEn": "SMK Corporation"
+    },
+    {
+        "code": "0000E1",
+        "company": "ソフトバンク株式会社",
+        "companyEn": "SoftBank Corp."
+    },
+    {
+        "code": "00011B",
+        "company": "SolaX Power Network Technology (Zhe jiang) Co., Ltd.",
+        "companyEn": "SolaX Power Network Technology (Zhe jiang) Co. , Ltd."
+    },
+    {
+        "code": "000060",
+        "company": "株式会社ソニーコンピュータサイエンス研究所",
+        "companyEn": "Sony Computer Science Laboratories, Inc."
+    },
+    {
+        "code": "00006E",
+        "company": "株式会社サウンドビジョン",
+        "companyEn": "Soundvision co.,ltd."
+    },
+    {
+        "code": "000108",
+        "company": "株式会社SOUSEI Technology",
+        "companyEn": "SOUSEI Technology Inc."
+    },
+    {
+        "code": "000116",
+        "company": "Sungrow Power Supply Co., Ltd.",
+        "companyEn": "Sungrow Power Supply Co., Ltd."
+    },
+    {
+        "code": "000101",
+        "company": "サンポット株式会社",
+        "companyEn": "Sunpot Co., Ltd"
+    },
+    {
+        "code": "0000DB",
+        "company": "サンテックパワージャパン株式会社",
+        "companyEn": "Suntech Power Japan Corporation"
+    },
+    {
+        "code": "00003D",
+        "company": "住友電気工業株式会社",
+        "companyEn": "SUMITOMO ELECTRIC INDUSTRIES, LTD."
+    },
+    {
+        "code": "00003E",
+        "company": "住友電工ネットワークス株式会社",
+        "companyEn": "SUMITOMO ELECTRIC NETWORKS, INC."
+    },
+    {
+        "code": "00012D",
+        "company": "立川ブラインド工業株式会社",
+        "companyEn": "TACHIKAWA CORPORATION"
+    },
+    {
+        "code": "000085",
+        "company": "株式会社東光高岳",
+        "companyEn": "TAKAOKA TOKO CO.,LTD"
+    },
+    {
+        "code": "0000AF",
+        "company": "タカラスタンダード株式会社",
+        "companyEn": "Takara Standard Co.,Ltd"
+    },
+    {
+        "code": "0000E4",
+        "company": "株式会社テクノアイ",
+        "companyEn": "technoeye Inc."
+    },
+    {
+        "code": "0000FF",
+        "company": "東京電力エナジーパートナー株式会社",
+        "companyEn": "TEPCO Energy Partner, Inc."
+    },
+    {
+        "code": "0000EE",
+        "company": "テセラ・テクノロジー株式会社",
+        "companyEn": "TESSERA TECHNOLOGY INC."
+    },
+    {
+        "code": "0000B5",
+        "company": "中国電力株式会社",
+        "companyEn": "The Chugoku Electric Power Co., Ltd"
+    },
+    {
+        "code": "00009A",
+        "company": "関西電力送配電株式会社",
+        "companyEn": "The Kansai Electric Power Co., Inc."
+    },
+    {
+        "code": "0000CD",
+        "company": "トクラス株式会社",
+        "companyEn": "TOCLAS CORPORATION"
+    },
+    {
+        "code": "000126",
+        "company": "株式会社戸上電機製作所",
+        "companyEn": "Togami Electric Mfg.co.,Ltd."
+    },
+    {
+        "code": "0000F9",
+        "company": "東邦電子株式会社",
+        "companyEn": "TOHO ELECTRONICS INC."
+    },
+    {
+        "code": "0000C2",
+        "company": "東北計器工業株式会社",
+        "companyEn": "Tohoku Electric Meter Industry Co.,Inc"
+    },
+    {
+        "code": "0000BC",
+        "company": "東北電力ネットワーク株式会社",
+        "companyEn": "TohokuElectric Power Network Company,Incorporated"
+    },
+    {
+        "code": "000099",
+        "company": "東京電力ホールディングス株式会社",
+        "companyEn": "Tokyo Electric Power Company Holdings, Inc."
+    },
+    {
+        "code": "0000B3",
+        "company": "特定非営利活動法人TOPPERSプロジェクト",
+        "companyEn": "TOPPERS Project, Inc."
+    },
+    {
+        "code": "000111",
+        "company": "東プレ株式会社",
+        "companyEn": "Topre Corporation"
+    },
+    {
+        "code": "000016",
+        "company": "株式会社東芝",
+        "companyEn": "Toshiba Corp."
+    },
+    {
+        "code": "000043",
+        "company": "東芝デベロップメントエンジニアリング㈱",
+        "companyEn": "TOSHIBA DEVELOPMENT & ENGINEERING CORPORATION"
+    },
+    {
+        "code": "0000EC",
+        "company": "東芝エネルギーシステムズ株式会社",
+        "companyEn": "Toshiba Energy Systems & Solutions Corporation"
+    },
+    {
+        "code": "0000D9",
+        "company": "東芝ITコントロールシステム株式会社",
+        "companyEn": "Toshiba IT & Control Systems Corporation"
+    },
+    {
+        "code": "000069",
+        "company": "東芝ライフスタイル株式会社",
+        "companyEn": "Toshiba Lifestyle Products & Services Corporation"
+    },
+    {
+        "code": "00001B",
+        "company": "東芝ライテック株式会社",
+        "companyEn": "TOSHIBA LIGHTING & TECHNOLOGY CORPORATION"
+    },
+    {
+        "code": "000035",
+        "company": "東光東芝メーターシステムズ株式会社",
+        "companyEn": "Toshiba Toko Meter Systems Co.,Ltd."
+    },
+    {
+        "code": "000050",
+        "company": "ＴＯＴＯ株式会社",
+        "companyEn": "TOTO LTD."
+    },
+    {
+        "code": "0000EF",
+        "company": "株式会社豊田自動織機",
+        "companyEn": "TOYOTA INDUSTRIES CORPORATION"
+    },
+    {
+        "code": "000121",
+        "company": "トヨタ自動車株式会社",
+        "companyEn": "TOYOTA MOTOR CORPORATION"
+    },
+    {
+        "code": "00011F",
+        "company": "豊田通商株式会社",
+        "companyEn": "TOYOTA TSUSHO CORPORATION"
+    },
+    {
+        "code": "00005C",
+        "company": "トランスブート株式会社",
+        "companyEn": "Tranceboot Co.,Ltd."
+    },
+    {
+        "code": "000138",
+        "company": "TRENDE株式会社",
+        "companyEn": "TRENDE Inc."
+    },
+    {
+        "code": "000076",
+        "company": "株式会社TSP",
+        "companyEn": "TSP CO.,Ltd"
+    },
+    {
+        "code": "0000D0",
+        "company": "株式会社椿本チエイン",
+        "companyEn": "TSUBAKIMOTO CHAIN CO."
+    },
+    {
+        "code": "0000C1",
+        "company": "通研電気工業株式会社",
+        "companyEn": "Tsuken Electric Ind Co., Ltd."
+    },
+    {
+        "code": "000053",
+        "company": "株式会社ユビキタスAI",
+        "companyEn": "Ubiquitous AI Corporation"
+    },
+    {
+        "code": "000117",
+        "company": "WWB株式会社",
+        "companyEn": "WWB Corporation"
+    },
+    {
+        "code": "000095",
+        "company": "大和電器株式会社",
+        "companyEn": "Yamato Denki Co.,Ltd."
+    },
+    {
+        "code": "00009E",
+        "company": "株式会社安川電機",
+        "companyEn": "YASKAWA ELECTRIC CORPORATION"
+    },
+    {
+        "code": "00007A",
+        "company": "図研エルミック株式会社",
+        "companyEn": "ZUKEN ELMIC,INC."
+    },
+    {
+        "code": "0000B4",
+        "company": "フォーアールエナジー株式会社",
+        "companyEn": "4R Energy Corporation"
+    }
+]
