@@ -7,7 +7,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.commons.lang3.SerializationUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -38,6 +37,7 @@ public class test {
         // Convert to JSON string
         String jsonString = mergedJson.toString();
         System.out.println(jsonString); //
+        System.out.println(obj4.get("en")); 
 		
 	}
 

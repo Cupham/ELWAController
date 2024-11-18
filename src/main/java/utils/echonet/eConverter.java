@@ -27,6 +27,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -3085,7 +3086,53 @@ public class eConverter {
 			return null;
 		}
 	}
+	public static byte[] propertyMapToProperties(byte[] map) {
+		if(map == null || map.length == 0) return new byte[]{};
+		byte[] ret = new byte[(int)(map[0] & 0xFF)];
+		if(ret.length < 16) {
+			for(int i = 0; i < ret.length; i++) {
+				ret[i] = map[i+1];
+			}
+		} else {
+			int n = 0;
+			for(int low = 0; low < 16; low++) {
+				byte tmp = map[low + 1];
+				for(int high = 0; high < 8; high++) {
+					if((tmp & 0x01) == 0x01) {
+						//ret[n] = (byte)(i | ((0x0F - j) << 4));
+						ret[n] = (byte)(low | ((high + 0x08) << 4));
+						n++;
+					}
+					tmp = (byte)(tmp >> 1);
+				}
+			}
+		}
+		
+		return ret;
+	}
+	public static  ArrayList<EPC> propertyMapToEPCs(byte[] map, boolean withSelfDefindedEPC) {
+		byte[] pp  = new byte[] {};
+		ArrayList<EPC> rs = new ArrayList<EPC>();
+		pp = propertyMapToProperties(map);
+		for (byte b : pp) {
+			if (!withSelfDefindedEPC) {
+				if (b != 0x9d && b != 0x9e && b != 0x9f  
+					&& b != 0xf0 && b != 0xf1 && b != 0xf2
+					&& b != 0xf3 && b != 0xf4 && b != 0xf5
+					&& b != 0xf6 && b != 0xf7 && b != 0xf8
+					&& b != 0xf9 && b != 0xfa && b != 0xfb
+							&& b != 0xfc && b != 0xfd && b != 0xfe
+									&& b != 0xff){
+					rs.add(EPC.fromByte(b));
 
+				}
+				
+			} else {
+				rs.add(EPC.fromByte(b));
+			}
+		}
+		return rs;
+	}
 	public static ArrayList<EPC> getEPCListFromByte(String epcString, boolean withSelfDefindedEPC) {
 		ArrayList<EPC> epcList = null;
 		if (epcString.length() >= 2) {

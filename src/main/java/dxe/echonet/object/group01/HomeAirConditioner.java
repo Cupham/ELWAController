@@ -1,6 +1,6 @@
 package dxe.echonet.object.group01;
 
-import java.io.Serializable;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Timer;
@@ -8,7 +8,6 @@ import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.apache.commons.lang3.SerializationUtils;
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.MqttPersistenceException;
@@ -41,6 +40,7 @@ import dxe.echonet.property.Property99;
 import dxe.echonet.property.Property9A;
 import dxe.echonet.property.group01.HomeAirConditioner90;
 import dxe.echonet.property.group01.HomeAirConditioner91;
+import dxe.echonet.property.group01.HomeAirConditioner92;
 import dxe.echonet.property.group01.HomeAirConditioner94;
 import dxe.echonet.property.group01.HomeAirConditioner95;
 import dxe.echonet.property.group01.HomeAirConditioner96;
@@ -142,7 +142,7 @@ public class HomeAirConditioner extends ECHONETObject {
 							try {
 								String topic = String.format("%s/%s/properties/%s", Controller.publishTopic,
 										getDeviceID(), pp.propertyName);
-								MqttMessage msg = new MqttMessage(SerializationUtils.serialize((Serializable) pp.edtToStringValue()));
+								MqttMessage msg = new MqttMessage(pp.edtToStringValue().get(pp.propertyName).toString().getBytes());
 								Controller.mqttClient.publish(topic, msg);
 							} catch (MqttPersistenceException e) {
 								// TODO Auto-generated catch block
@@ -166,6 +166,7 @@ public class HomeAirConditioner extends ECHONETObject {
 	}
 
 	private void getGettableProperties() {
+		
 		try {
 			this.service.doGet(this.getNode(), this.getEoj(), this.getGettableEPCList(), 5000, new GetListener() {
 				int c = 0;
@@ -176,6 +177,7 @@ public class HomeAirConditioner extends ECHONETObject {
 						return;
 					}
 					ELProperty pp = null;
+	
 					switch (resultData.getEPC()) {
 
 					case x80:
@@ -365,6 +367,15 @@ public class HomeAirConditioner extends ECHONETObject {
 						logger.info(String.format("Node:%s@EOJ:%s {EPC:0x91, EDT: 0x%02X}=={onTimerTime:%s}",
 								getNode().getNodeInfo().toString(), getEoj().toString(), resultData.toBytes()[0],
 								resultData.toBytes()[1], pp.edtToStringValue()));
+						break;
+					case x92:
+						c += 1;
+						pp = new HomeAirConditioner92(resultData.toBytes());
+						getProperties().put(EPC.x92, pp);
+
+						logger.info(String.format("Node:%s@EOJ:%s {EPC:%s, EDT: 0x%02X}=={relativeTimeOfOffTimer:%s}",
+								getNode().getNodeInfo().toString(), getEoj().toString(), resultData.getEPC(),
+								resultData.toBytes()[0], pp.edtToStringValue()));
 						break;
 					case x94:
 						c += 1;
@@ -652,6 +663,9 @@ public class HomeAirConditioner extends ECHONETObject {
 								getNode().getNodeInfo().toString(), getEoj().toString(), resultData.getEPC(),
 								resultData.toBytes()[0], pp.edtToStringValue()));
 						break;
+					case xC7:
+						c += 1;
+						break;
 					case xC8:
 						c += 1;
 						pp = new HomeAirConditionerC8(resultData.toBytes());
@@ -669,6 +683,9 @@ public class HomeAirConditioner extends ECHONETObject {
 						logger.info(String.format("Node:%s@EOJ:%s {EPC:%s, EDT: 0x%02X}=={selfCleaningMethod:%s}",
 								getNode().getNodeInfo().toString(), getEoj().toString(), resultData.getEPC(),
 								resultData.toBytes()[0], pp.edtToStringValue()));
+						break;
+					case xCB:
+						c += 1;
 						break;
 					case xCC:
 						c += 1;
@@ -711,6 +728,7 @@ public class HomeAirConditioner extends ECHONETObject {
 					default:
 						break;
 					}
+					
 					if (c == getGettableEPCList().size()) {
 						try {
 							String tosend = toJsonString();
@@ -888,9 +906,9 @@ public class HomeAirConditioner extends ECHONETObject {
 					if (pp != null) {
 						pp.edt = resultData.toBytes();
 						try {
-							String topic = String.format("%s/%s/properties/%", Controller.publishTopic, getDeviceID(),
+							String topic = String.format("%s/%s/properties/%s", Controller.publishTopic, getDeviceID(),
 									pp.propertyName);
-							MqttMessage msg = new MqttMessage(SerializationUtils.serialize((Serializable) pp.edtToStringValue()));
+							MqttMessage msg = new MqttMessage(pp.edtToStringValue().get(pp.propertyName).toString().getBytes());
 							Controller.mqttClient.publish(topic, msg);
 						} catch (MqttPersistenceException e) {
 							// TODO Auto-generated catch block
@@ -932,7 +950,9 @@ public class HomeAirConditioner extends ECHONETObject {
 					}
 					switch (resultData.getEPC()) {
 					case x9F:
+
 						setGettableEPCList(eConverter.getEPCListFromByte(resultData.getActualData().toString(), false));
+						getGettableEPCList().remove(EPC.xDB);
 						getGettableProperties();
 						break;
 					case x9E:

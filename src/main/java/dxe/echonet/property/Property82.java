@@ -32,7 +32,6 @@ public class Property82 extends ELProperty {
 			return obj;
 		}
 		
-		
 
 	}
 	private String versionFromBytes() {

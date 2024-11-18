@@ -87,17 +87,29 @@ public abstract class ECHONETObject {
 	public String toJsonString() {
 		ELProperty pp97 = getProperties().get(EPC.x97);
 		ELProperty pp98 = getProperties().get(EPC.x98);
+		
+		
 		JSONObject json = new JSONObject();
+		
 		List<JSONObject> epcLists = new ArrayList<JSONObject>();
 		if (pp97 != null && pp98 != null) {
 			json.put("currentDateAndTime", pp98.toString() + " T " + pp97.toString());
+		}
+		ELProperty pp82 = getProperties().get(EPC.x82);
+		if(pp82 == null) {
+			JSONObject protocol = new JSONObject();
+			protocol.put("type", "ECHONET Lite");
+			protocol.put("version", "unknown");
+			json.put("protocol", protocol);
 		}
 		for (EPC epc : getGettableEPCList()) {
 			if (epc == EPC.x97 || epc == EPC.x98) {
 
 			} else {
-				epcLists.add(getProperties().get(epc).edtToStringValue());
+				if(getProperties().get(epc) != null)
+					epcLists.add(getProperties().get(epc).edtToStringValue());
 			}
+			
 		}
 		if(epcLists.size() > 0) {
 			for (JSONObject jsonObject : epcLists) {
@@ -106,6 +118,7 @@ public abstract class ECHONETObject {
 	            }
 	        }
 		}
+		System.out.println(json.toString());
 		return json.toString();
 	}
 	

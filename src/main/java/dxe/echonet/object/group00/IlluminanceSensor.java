@@ -1,6 +1,6 @@
 package dxe.echonet.object.group00;
 
-import java.io.Serializable;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Timer;
@@ -8,7 +8,6 @@ import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.apache.commons.lang3.SerializationUtils;
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.MqttPersistenceException;
@@ -107,7 +106,7 @@ public class IlluminanceSensor extends ECHONETObject {
 								String topic = String.format("%s/%s/properties/%s", Controller.publishTopic,
 										getDeviceID(), pp.propertyName);
 
-								MqttMessage msg = new MqttMessage(SerializationUtils.serialize((Serializable) pp.edtToStringValue()));
+								MqttMessage msg = new MqttMessage(pp.edtToStringValue().get(pp.propertyName).toString().getBytes());
 								Controller.mqttClient.publish(topic, msg);
 							} catch (MqttPersistenceException e) {
 								// TODO Auto-generated catch block
@@ -131,6 +130,9 @@ public class IlluminanceSensor extends ECHONETObject {
 	}
 
 	private void getGettableProperties() {
+		for (EPC epc : getGettableEPCList()) {
+			System.out.println(epc.toString());
+		}
 		try {
 			this.service.doGet(this.getNode(), this.getEoj(), this.getGettableEPCList(), 5000, new GetListener() {
 				int c = 0;
@@ -332,6 +334,9 @@ public class IlluminanceSensor extends ECHONETObject {
 					default:
 						break;
 					}
+
+					System.out.println(c + "===========================" + getGettableEPCList().size());
+
 					if (c == getGettableEPCList().size()) {
 						try {
 							String tosend = toJsonString();
@@ -413,9 +418,9 @@ public class IlluminanceSensor extends ECHONETObject {
 					if (pp != null) {
 						pp.edt = resultData.toBytes();
 						try {
-							String topic = String.format("%s/%s/properties/%", Controller.publishTopic, getDeviceID(),
+							String topic = String.format("%s/%s/properties/%s", Controller.publishTopic, getDeviceID(),
 									pp.propertyName);
-							MqttMessage msg = new MqttMessage(SerializationUtils.serialize((Serializable) pp.edtToStringValue()));
+							MqttMessage msg = new MqttMessage(pp.edtToStringValue().get(pp.propertyName).toString().getBytes());
 							Controller.mqttClient.publish(topic, msg);
 						} catch (MqttPersistenceException e) {
 							// TODO Auto-generated catch block

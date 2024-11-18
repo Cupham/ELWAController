@@ -222,10 +222,11 @@ public class Controller {
 					if (rs) {
 						json.put("topic", topic);
 						json.put("status", 200);
-
+						json.put("note", "Finished");
 					} else {
 						json.put("topic", topic);
 						json.put("status", 500);
+						json.put("note", "Unexpected Error");
 					}
 					try {
 						mqttClient.publish(String.format("%s/%s", publishTopic, "cmdreport"),

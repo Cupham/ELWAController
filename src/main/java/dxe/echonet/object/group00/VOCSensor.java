@@ -1,6 +1,6 @@
 package dxe.echonet.object.group00;
 
-import java.io.Serializable;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Timer;
@@ -8,7 +8,6 @@ import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.apache.commons.lang3.SerializationUtils;
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.MqttPersistenceException;
@@ -107,7 +106,7 @@ public class VOCSensor extends ECHONETObject {
 							try {
 								String topic = String.format("%s/%s/properties/%s", Controller.publishTopic,
 										getDeviceID(), pp.propertyName);
-								MqttMessage msg = new MqttMessage(SerializationUtils.serialize((Serializable) pp.edtToStringValue()));
+								MqttMessage msg = new MqttMessage(pp.edtToStringValue().get(pp.propertyName).toString().getBytes());
 								Controller.mqttClient.publish(topic, msg);
 							} catch (MqttPersistenceException e) {
 								// TODO Auto-generated catch block
@@ -340,7 +339,7 @@ public class VOCSensor extends ECHONETObject {
 					default:
 						break;
 					}
-					if (c == getGettableEPCList().size()) {
+					if (c == getGettableEPCList().size() || result.isDone()) {
 						try {
 							String tosend = toJsonString();
 							String topic = String.format("%s/%s/properties", Controller.publishTopic, getDeviceID());
@@ -428,7 +427,7 @@ public class VOCSensor extends ECHONETObject {
 						try {
 							String topic = String.format("%s/%s/properties/%s", Controller.publishTopic, getDeviceID(),
 									pp.propertyName);
-							MqttMessage msg = new MqttMessage(SerializationUtils.serialize((Serializable) pp.edtToStringValue()));
+							MqttMessage msg = new MqttMessage(pp.edtToStringValue().get(pp.propertyName).toString().getBytes());
 							Controller.mqttClient.publish(topic, msg);
 						} catch (MqttPersistenceException e) {
 							// TODO Auto-generated catch block

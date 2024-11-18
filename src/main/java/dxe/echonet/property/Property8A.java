@@ -37,11 +37,11 @@ public class Property8A extends ELProperty {
 
 	}
 	private JSONObject manufacturerFromBytes() {
-		JSONObject rs = new JSONObject();
+		JSONObject mf = new JSONObject();
 		String ja = "N/A";
 		String en = "N/A";
 		String code = String.format("%02X%02X%02X", edt[0], edt[1], edt[2]).toString();
-		rs.put("code", code);
+		mf.put("code", code);
 		ClassLoader loader = Property8A.class.getClassLoader();
 		InputStream is = loader.getResourceAsStream("manufacturer.json");
 		ObjectMapper objectMapper = new ObjectMapper();
@@ -67,9 +67,10 @@ public class Property8A extends ELProperty {
 		JSONObject description = new JSONObject();
 		description.put("ja", ja);
 		description.put("en", en);
-		rs.put("descriptions", description);
+		mf.put("descriptions", description);
 		
-		return rs;
+		
+		return new JSONObject().put(propertyName, mf);
 		
 	}
 	private static class Manufacturer {

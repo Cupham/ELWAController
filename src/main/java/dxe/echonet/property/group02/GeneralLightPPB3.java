@@ -30,6 +30,6 @@ public class GeneralLightPPB3 extends ELProperty {
 			obj.put(propertyName,String.format("0x%02X", edt[0]));
 			return obj;
 		}
-		}
+	}
 
 }

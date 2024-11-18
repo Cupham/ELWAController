@@ -1,6 +1,6 @@
 package dxe.echonet.object.group02;
 
-import java.io.Serializable;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Timer;
@@ -8,7 +8,6 @@ import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.apache.commons.lang3.SerializationUtils;
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.MqttPersistenceException;
@@ -126,7 +125,7 @@ public class GeneralLight extends ECHONETObject {
 							try {
 								String topic = String.format("%s/%s/properties/%s", Controller.publishTopic,
 										getDeviceID(), pp.propertyName);
-								MqttMessage msg = new MqttMessage(SerializationUtils.serialize((Serializable) pp.edtToStringValue()));
+								MqttMessage msg = new MqttMessage(pp.edtToStringValue().get(pp.propertyName).toString().getBytes());
 								Controller.mqttClient.publish(topic, msg);
 							} catch (MqttPersistenceException e) {
 								// TODO Auto-generated catch block
@@ -158,6 +157,12 @@ public class GeneralLight extends ECHONETObject {
 				public void receive(GetResult result, ResultFrame resultFrame, ResultData resultData) {
 					if (resultData.isEmpty()) {
 						return;
+					}
+					try {
+						result.join();
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
 					}
 					switch (resultData.getEPC()) {
 					case x80:
@@ -519,7 +524,9 @@ public class GeneralLight extends ECHONETObject {
 					default:
 						break;
 					}
-
+					if(result.isDone()) {
+						System.out.println("------\n\n\n I am done \n\n\n");
+					}
 					if (c == getGettableEPCList().size()) {
 						try {
 							String tosend = toJsonString();
@@ -676,9 +683,9 @@ public class GeneralLight extends ECHONETObject {
 					if (pp != null) {
 						pp.edt = resultData.toBytes();
 						try {
-							String topic = String.format("%s/%s/properties/%", Controller.publishTopic, getDeviceID(),
+							String topic = String.format("%s/%s/properties/%s", Controller.publishTopic, getDeviceID(),
 									pp.propertyName);
-							MqttMessage msg = new MqttMessage(SerializationUtils.serialize((Serializable) pp.edtToStringValue()));
+							MqttMessage msg = new MqttMessage(pp.edtToStringValue().get(pp.propertyName).toString().getBytes());
 							Controller.mqttClient.publish(topic, msg);
 						} catch (MqttPersistenceException e) {
 							// TODO Auto-generated catch block
@@ -721,6 +728,7 @@ public class GeneralLight extends ECHONETObject {
 					switch (resultData.getEPC()) {
 					case x9F:
 						setGettableEPCList(eConverter.getEPCListFromByte(resultData.getActualData().toString(), false));
+						getGettableEPCList().remove(EPC.x93);
 						getGettableProperties();
 						break;
 					case x9E:

@@ -23,13 +23,13 @@ public class GeneralLightPPBD extends ELProperty {
 
 	@Override
 	public JSONObject edtToStringValue() {
-	if(edt == null ) {
-		return null;
-	} else {
-		JSONObject obj = new JSONObject();
-		obj.put(propertyName,eConverter.LightColorEnum.fromCode(edt[0]).toString());
-		return obj;
-	}
+		if(edt == null ) {
+			return null;
+		} else {
+			JSONObject obj = new JSONObject();
+			obj.put(propertyName,eConverter.LightColorEnum.fromCode(edt[0]).toString());
+			return obj;
+		}
 	}
 
 }
