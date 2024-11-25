@@ -16,12 +16,12 @@ public class HomeAirConditionerC4 extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
+	public byte[] edtFromString(JSONObject input) {
 		byte[] rs;
-		if (input.equals("auto")) {
+		if (input.get(propertyName).equals("auto")) {
 			rs = new byte[] { 0x41 };
 		} else {
-			int val = Integer.parseInt(input);
+			int val = input.getInt(propertyName);
 			rs = new byte[] { (byte) (0x30 + val) };
 		}
 		return rs;

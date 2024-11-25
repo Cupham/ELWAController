@@ -15,7 +15,7 @@ public abstract class ELProperty {
 		this.propertyName = propertyName;
 	}
 
-	public abstract byte[] edtFromString(String input);
+	public abstract byte[] edtFromString(JSONObject input);
 
 	public abstract JSONObject edtToStringValue();
 

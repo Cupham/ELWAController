@@ -3,7 +3,6 @@ package dxe.echonet.property.group01;
 import org.json.JSONObject;
 
 import dxe.echonet.object.ComponentsOperationStatusClass;
-import dxe.echonet.object.SelfCleaningMethodClass;
 import dxe.echonet.property.ELProperty;
 import echowand.common.EPC;
 
@@ -18,7 +17,7 @@ public class HomeAirConditionerCD extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
+	public byte[] edtFromString(JSONObject input) {
 		return null;
 	}
 

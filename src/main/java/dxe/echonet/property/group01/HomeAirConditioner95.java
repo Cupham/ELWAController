@@ -17,8 +17,8 @@ public class HomeAirConditioner95 extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
-		TimeFromByteClass time = new TimeFromByteClass(input);
+	public byte[] edtFromString(JSONObject input) {
+		TimeFromByteClass time = new TimeFromByteClass(input.getString(propertyName));
 		return new byte[] { time.hour, time.minute };
 	}
 

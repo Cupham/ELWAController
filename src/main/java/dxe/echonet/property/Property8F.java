@@ -15,10 +15,10 @@ public class Property8F extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
+	public byte[] edtFromString(JSONObject input) {
 
-		Boolean b = Boolean.valueOf(input);
-		if (b.booleanValue()) {
+		boolean b = input.getBoolean(propertyName);
+		if (b) {
 			return new byte[] { 0x41 };
 		} else {
 			return new byte[] { 0x42 };

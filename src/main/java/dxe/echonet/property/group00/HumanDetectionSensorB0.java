@@ -16,8 +16,9 @@ public class HumanDetectionSensorB0 extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
-		return new byte[] { (byte) Integer.parseInt(input) };
+	public byte[] edtFromString(JSONObject input) {
+		int value = input.getInt(propertyName);
+		return new byte[] { (byte) value};
 	}
 
 	@Override

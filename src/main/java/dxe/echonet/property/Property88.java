@@ -15,9 +15,9 @@ public class Property88 extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
-		Boolean b = Boolean.valueOf(input);
-		if (b.booleanValue()) {
+	public byte[] edtFromString(JSONObject input) {
+		boolean b = input.getBoolean(propertyName);
+		if (b) {
 			return new byte[] { 0x41 };
 		} else {
 			return new byte[] { 0x42 };

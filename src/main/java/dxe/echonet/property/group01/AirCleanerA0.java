@@ -17,8 +17,8 @@ public class AirCleanerA0 extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
-		AirFlowRateClass airFlow = new AirFlowRateClass(input);
+	public byte[] edtFromString(JSONObject input) {
+		AirFlowRateClass airFlow = new AirFlowRateClass(input, this.propertyName);
 		return new byte[] { airFlow.airFLow };
 	}
 

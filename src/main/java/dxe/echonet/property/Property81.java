@@ -18,8 +18,8 @@ public class Property81 extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
-		return installationLocationToByte(input);
+	public byte[] edtFromString(JSONObject input) {
+		return installationLocationToByte(input.getString(propertyName));
 	}
 
 	@Override

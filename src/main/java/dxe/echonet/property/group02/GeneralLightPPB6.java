@@ -17,8 +17,8 @@ public class GeneralLightPPB6 extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
-		return new byte[] { eConverter.LightModeEnum.valueOf(input).code() };
+	public byte[] edtFromString(JSONObject input) {
+		return new byte[] { eConverter.LightModeEnum.valueOf(input.getString(propertyName)).code() };
 	}
 
 	@Override

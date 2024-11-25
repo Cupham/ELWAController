@@ -17,8 +17,8 @@ public class GeneralLightPPB4 extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
-		SpecifiableLevelClass levelClass = new SpecifiableLevelClass(input);
+	public byte[] edtFromString(JSONObject input) {
+		SpecifiableLevelClass levelClass = new SpecifiableLevelClass(input.getString(propertyName));
 		return new byte[] { levelClass.lightLevel, levelClass.color };
 	}
 

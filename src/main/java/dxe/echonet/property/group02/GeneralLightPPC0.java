@@ -17,8 +17,8 @@ public class GeneralLightPPC0 extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
-		RGBClass rgb = new RGBClass(input);
+	public byte[] edtFromString(JSONObject input) {
+		RGBClass rgb = new RGBClass(input.getString(propertyName));
 
 		return new byte[] { rgb.red, rgb.green, rgb.blue };
 	}

@@ -16,8 +16,8 @@ public class HomeAirConditionerCC extends ELProperty {
 		super(EPC.xCC, edt, "specialFunction");
 	}
 
-	public byte[] edtFromString(String input) {
-		return new byte[] { eConverter.SpecialFunctionEnum.valueOf(input).code() };
+	public byte[] edtFromString(JSONObject input) {
+		return new byte[] { eConverter.SpecialFunctionEnum.valueOf(input.getString(propertyName)).code() };
 	}
 
 	@Override

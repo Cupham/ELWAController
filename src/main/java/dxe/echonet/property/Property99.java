@@ -15,8 +15,9 @@ public class Property99 extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
-		int num = Integer.parseInt(input);
+	public byte[] edtFromString(JSONObject input) {
+		
+		int num = input.getInt(propertyName);
 		byte[] array = new byte[2];
 
 		array[0] = (byte) (num >> 8);

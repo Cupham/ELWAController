@@ -16,11 +16,11 @@ public class HomeAirConditionerB5 extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
-		if (input.equals("undefined")) {
+	public byte[] edtFromString(JSONObject input) {
+		if (input.get(propertyName).equals("undefined")) {
 			return new byte[] { (byte) 0xFD };
 		} else {
-			int number = Integer.parseInt(input);
+			int number = input.getInt(propertyName);
 			return new byte[] { (byte) number };
 		}
 	}
@@ -34,7 +34,7 @@ public class HomeAirConditionerB5 extends ELProperty {
 			if (edt[0] == 0xFD) {
 				obj.put(propertyName,"undefined");
 			} else {
-				obj.put(propertyName,edt[0]);
+				obj.put(propertyName,edt[0]& 0xFF);
 			}
 			
 			return obj;

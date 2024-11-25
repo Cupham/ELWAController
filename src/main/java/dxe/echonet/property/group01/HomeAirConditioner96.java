@@ -16,8 +16,9 @@ public class HomeAirConditioner96 extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
-		int totalTime = Integer.parseInt(input);
+	public byte[] edtFromString(JSONObject input) {
+		
+		int totalTime = input.getInt(propertyName);
 		int hour = totalTime / 60;
 		int minute = totalTime % 60;
 		return new byte[] { (byte) hour, (byte) minute };
@@ -30,7 +31,7 @@ public class HomeAirConditioner96 extends ELProperty {
 		} else {
 			JSONObject obj = new JSONObject();
 			
-			obj.put(propertyName,edt[0] * 60 + edt[1]);
+			obj.put(propertyName,edt[0] * 60 + (edt[1]& 0xFF));
 			return obj;
 		}
 	}

@@ -16,8 +16,8 @@ public class HomeAirConditionerC1 extends ELProperty {
 		super(EPC.xC1, edt, "humidifierFunction");
 	}
 
-	public byte[] edtFromString(String input) {
-		return new byte[] { eConverter.HumidifierFunctionEnum.valueOf(input).code() };
+	public byte[] edtFromString(JSONObject input) {
+		return new byte[] { eConverter.HumidifierFunctionEnum.valueOf(input.getString(propertyName)).code() };
 	}
 
 	@Override

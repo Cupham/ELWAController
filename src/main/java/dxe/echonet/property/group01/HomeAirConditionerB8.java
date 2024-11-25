@@ -17,8 +17,8 @@ public class HomeAirConditionerB8 extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
-		RatePowerConsumptionClass power = new RatePowerConsumptionClass(input);
+	public byte[] edtFromString(JSONObject input) {
+		RatePowerConsumptionClass power = new RatePowerConsumptionClass(input.getString(propertyName));
 		return power.toByteArray();
 	}
 

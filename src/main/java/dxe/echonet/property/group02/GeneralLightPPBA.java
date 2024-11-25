@@ -16,8 +16,8 @@ public class GeneralLightPPBA extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
-		int data = Integer.decode(input);
+	public byte[] edtFromString(JSONObject input) {
+		int data = input.getInt(propertyName);
 		return new byte[] { (byte) data };
 	}
 

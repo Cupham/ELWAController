@@ -104,7 +104,7 @@ public class HumanDetectionSensor extends ECHONETObject {
 							try {
 								String topic = String.format("%s/%s/properties/%s", Controller.publishTopic,
 										getDeviceID(), pp.propertyName);
-								MqttMessage msg = new MqttMessage(pp.edtToStringValue().get(pp.propertyName).toString().getBytes());
+								MqttMessage msg = new MqttMessage(pp.edtToStringValue().toString().getBytes());
 								Controller.mqttClient.publish(topic, msg);
 							} catch (MqttPersistenceException e) {
 								// TODO Auto-generated catch block
@@ -418,7 +418,7 @@ public class HumanDetectionSensor extends ECHONETObject {
 						try {
 							String topic = String.format("%s/%s/properties/%s", Controller.publishTopic, getDeviceID(),
 									pp.propertyName);
-							MqttMessage msg = new MqttMessage(pp.edtToStringValue().get(pp.propertyName).toString().getBytes());
+							MqttMessage msg = new MqttMessage(pp.edtToStringValue().toString().getBytes());
 							Controller.mqttClient.publish(topic, msg);
 						} catch (MqttPersistenceException e) {
 							// TODO Auto-generated catch block

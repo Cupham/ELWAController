@@ -16,7 +16,7 @@ public class HomeAirConditionerBD extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
+	public byte[] edtFromString(JSONObject input) {
 		return null;
 	}
 
@@ -29,7 +29,7 @@ public class HomeAirConditionerBD extends ELProperty {
 			if (edt[0] == 0x7E) {
 				obj.put(propertyName,"unmeasurable");
 			} else {
-				obj.put(propertyName,edt[0]);
+				obj.put(propertyName,edt[0]& 0xFF);
 			}
 			
 			return obj;

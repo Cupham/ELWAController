@@ -17,8 +17,8 @@ public class HomeAirConditioner94 extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
-		TimerReservationClass timer = new TimerReservationClass(input);
+	public byte[] edtFromString(JSONObject input) {
+		TimerReservationClass timer = new TimerReservationClass(input.getString(propertyName));
 		return new byte[] { timer.value };
 	}
 

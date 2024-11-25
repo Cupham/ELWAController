@@ -17,8 +17,8 @@ public class HomeAirConditionerB2 extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
-		return new byte[] { eConverter.HighSpeedOperationEnum.valueOf(input).code() };
+	public byte[] edtFromString(JSONObject input) {
+		return new byte[] { eConverter.HighSpeedOperationEnum.valueOf(input.getString(propertyName)).code() };
 	}
 
 	@Override

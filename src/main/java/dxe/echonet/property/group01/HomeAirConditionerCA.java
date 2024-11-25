@@ -17,7 +17,7 @@ public class HomeAirConditionerCA extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
+	public byte[] edtFromString(JSONObject input) {
 		return null;
 	}
 

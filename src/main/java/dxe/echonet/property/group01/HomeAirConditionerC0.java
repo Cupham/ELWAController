@@ -16,8 +16,8 @@ public class HomeAirConditionerC0 extends ELProperty {
 		super(EPC.xC0, edt, "ventilationFunction");
 	}
 
-	public byte[] edtFromString(String input) {
-		return new byte[] { eConverter.VentilationFunctionEnum.valueOf(input).code() };
+	public byte[] edtFromString(JSONObject input) {
+		return new byte[] { eConverter.VentilationFunctionEnum.valueOf(input.getString(propertyName)).code() };
 	}
 
 	@Override

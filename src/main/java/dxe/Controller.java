@@ -218,7 +218,7 @@ public class Controller {
 				ELProperty pp = dev.getSupportCommands().get(propertyName);
 				if (pp != null) {
 					boolean rs = executeCommand(dev.getNode(), dev.getEoj(), pp.epc,
-							new Data(pp.edtFromString(payload)));
+							new Data(pp.edtFromString(new JSONObject(payload))));
 					if (rs) {
 						json.put("topic", topic);
 						json.put("status", 200);

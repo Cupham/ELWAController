@@ -16,9 +16,9 @@ public class GeneralLightPP91 extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
-		int hour = Integer.parseInt(input.split(":")[0]);
-		int minute = Integer.parseInt(input.split(":")[1]);
+	public byte[] edtFromString(JSONObject input) {
+		int hour = Integer.parseInt(input.getString(propertyName).split(":")[0]);
+		int minute = Integer.parseInt(input.getString(propertyName).split(":")[1]);
 		return new byte[] { (byte) hour, (byte) minute };
 	}
 

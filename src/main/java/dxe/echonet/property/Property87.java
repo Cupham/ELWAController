@@ -15,8 +15,9 @@ public class Property87 extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
-		return new byte[] { (byte) Integer.parseInt(input) };
+	public byte[] edtFromString(JSONObject input) {
+		int value = input.getInt(propertyName);
+		return new byte[] { (byte) value };
 	}
 
 	@Override
@@ -25,7 +26,7 @@ public class Property87 extends ELProperty {
 			return null;
 		} else {
 			JSONObject obj = new JSONObject();
-			obj.put(propertyName,edt[0]);
+			obj.put(propertyName,edt[0]& 0xFF);
 			return obj;
 		}
 		

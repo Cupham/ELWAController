@@ -16,7 +16,7 @@ public class HomeAirConditionerBA extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
+	public byte[] edtFromString(JSONObject input) {
 		return null;
 	}
 
@@ -26,7 +26,7 @@ public class HomeAirConditionerBA extends ELProperty {
 			return null;
 		} else {
 			JSONObject obj = new JSONObject();
-			obj.put(propertyName, edt[0]);
+			obj.put(propertyName, edt[0]& 0xFF);
 			return obj;
 		}
 	}

@@ -16,8 +16,8 @@ public class GeneralLightPPB9 extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
-		int num = Integer.parseInt(input);
+	public byte[] edtFromString(JSONObject input) {
+		int num = input.getInt(propertyName);
 		return new byte[] { (byte) num };
 	}
 
@@ -27,7 +27,7 @@ public class GeneralLightPPB9 extends ELProperty {
 			return null;
 		} else {
 			JSONObject obj = new JSONObject();
-			obj.put(propertyName,edt[0]);
+			obj.put(propertyName,edt[0]& 0xFF);
 			return obj;
 		}
 	}

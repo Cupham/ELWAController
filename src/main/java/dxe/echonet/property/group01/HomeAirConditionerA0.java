@@ -17,8 +17,8 @@ public class HomeAirConditionerA0 extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
-		AirFlowRateClass airFlow = new AirFlowRateClass(input);
+	public byte[] edtFromString(JSONObject input) {
+		AirFlowRateClass airFlow = new AirFlowRateClass(input, propertyName);
 		return new byte[] { airFlow.airFLow };
 	}
 

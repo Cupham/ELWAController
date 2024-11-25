@@ -17,8 +17,8 @@ public class HomeAirConditionerCF extends ELProperty {
 	}
 
 	@Override
-	public byte[] edtFromString(String input) {
-		if (input.equals("on")) {
+	public byte[] edtFromString(JSONObject input) {
+		if (input.get(propertyName).equals("on")) {
 			return new byte[] { 0x41 };
 		} else {
 			return new byte[] { 0x42 };
