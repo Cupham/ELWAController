@@ -1,2 +1,12 @@
+dxe/echonet/object/group00/CO2Sensor$6.class
 dxe/Controller$1.class
 dxe/Controller$2.class
+dxe/echonet/object/group00/VOCSensor$6.class
+dxe/echonet/object/group01/HomeAirConditioner$6.class
+dxe/echonet/object/group00/HumanDetectionSensor$6.class
+dxe/echonet/object/group01/AirCleaner$6.class
+dxe/echonet/object/group02/ElectricCurtain$6.class
+dxe/echonet/object/group02/GeneralLight$6.class
+dxe/echonet/object/group00/TemperatureSensor$6.class
+dxe/echonet/object/group00/IlluminanceSensor$6.class
+utils/echonet/eConverter$1.class
